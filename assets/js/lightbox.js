@@ -1,16 +1,3 @@
-/*!
- * Lightbox v2.10.0
- * by Lokesh Dhakar
- *
- * More info:
- * http://lokeshdhakar.com/projects/lightbox2/
- *
- * Copyright 2007, 2018 Lokesh Dhakar
- * Released under the MIT license
- * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- *
- * @preserve
- */
 
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
@@ -18,9 +5,7 @@
         // AMD. Register as an anonymous module.
         define(['jquery'], factory);
     } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but
-        // only CommonJS-like environments that support module.exports,
-        // like Node.
+     
         module.exports = factory(require('jquery'));
     } else {
         // Browser globals (root is window)
@@ -53,15 +38,7 @@
     showImageNumberLabel: true,
     wrapAround: false,
     disableScrolling: false,
-    /*
-    Sanitize Title
-    If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
-    This will free you to add html tags, such as links, in the caption.
-
-    If the caption data is user submitted or from some other untrusted source, then set this to true
-    to prevent xss and other injection attacks.
-     */
-    sanitizeTitle: false
+izeTitle: false
   };
 
   Lightbox.prototype.option = function(options) {
